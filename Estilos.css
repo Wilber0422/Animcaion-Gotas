@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Contenedor {
+   display: inline-block;
+    filter: contrast(30);
+    background-color: #fff;
+}
+
+.Caja-1 {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background: black;
+    margin: 200px 200px;
+    border-radius: 50%;
+    animation: Ir-Derecha 3s alternate infinite;
+    filter: blur(20px);
+}
+
+.Caja-2{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background: black;
+    margin: 200px 200px;
+    border-radius: 50%;
+    animation: Ir-Izquierda 3s alternate infinite;
+    filter: blur(20px);
+}
+
+@keyframes Ir-Derecha {
+    0% {
+        transform: translate(300px);
+    }
+
+    100% {
+        transform: translate(0px);
+    }
+}
+
+@keyframes Ir-Izquierda {
+    0% {
+        transform: translate(-300px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
